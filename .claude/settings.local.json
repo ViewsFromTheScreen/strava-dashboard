@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\abel-\\\\Documents\\\\Strava\" -Recurse -Force)",
+      "Bash(Select-Object FullName, Length, CreationTime)",
+      "Bash(Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\abel-\\\\Documents\\\\Strava\" -Recurse -Force | Where-Object { -not $_.PSIsContainer } | Select-Object FullName, Length | Sort-Object FullName)",
+      "PowerShell(Get-ChildItem *)",
+      "Bash(Select-Object Name)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\abel-\\\\Documents\\\\Strava\" -Filter \"*.py\")",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
